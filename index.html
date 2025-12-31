@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>B&amp;C | Servicios Financieros</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="robots" content="index, follow" />
+		<meta name="robots" content="noindex, nofollow" />
 
 		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://www.byc.cl/feed/" />
 
@@ -26,6 +26,34 @@
 			.archive_header {
 				font-family: 'PT Sans', arial, sans-serif;
 			}
+			
+			.waiting-page {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				min-height: 100vh;
+				text-align: center;
+				padding: 40px 20px;
+				background: #f5f5f5;
+			}
+			
+			.waiting-page h1 {
+				font-size: 2.5em;
+				margin-bottom: 20px;
+				color: #333;
+			}
+			
+			.waiting-page p {
+				font-size: 1.2em;
+				color: #666;
+				max-width: 600px;
+				line-height: 1.6;
+			}
+			
+			.waiting-logo {
+				margin-bottom: 30px;
+			}
 		</style>
 
 		<!-- Custom Stylesheet -->
@@ -33,61 +61,17 @@
 	</head>
 
 	<body class="home">
-		<div id="wrapper">
-			<div id="header-container">
-				<div id="header" class="col-full">
-					<div id="logo">
-						<a href="https://byc.nexbu.cloud/" title="Servicios Financieros">
-							<img src="https://byc.nexbu.cloud/img/logobyc.gif" alt="B&amp;C" />
-						</a>
-						<h1 class="site-title"><a href="https://byc.nexbu.cloud/">B&amp;C</a></h1>
-						<span class="site-description">Servicios Financieros</span>
-					</div>
-
-					<div id="navigation" class="fr">
-						<button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
-						<div class="nav">
-							<ul id="menu-menu-principal-esp" class="menu">
-								<li id="menu-item-62" class=""><a href="https://byc.nexbu.cloud/acerca-de/">ACERCA DE B&#038;C</a></li>
-								<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="https://byc.nexbu.cloud/servicios/">SERVICIOS OFRECIDOS</a></li>
-								<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="https://byc.nexbu.cloud/transacciones/">TRANSACCIONES RELEVANTES</a></li>
-								<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="https://byc.nexbu.cloud/contacto/">CONTACTO</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+		<div class="waiting-page">
+			<div class="waiting-logo">
+				<img src="https://byc.nexbu.cloud/img/logobyc.gif" alt="B&amp;C" />
 			</div>
-
-			<div class="slide-image fl" style="display: flex; justify-content: center; width: 100%">
-				<img src="https://byc.nexbu.cloud/img/byc-servicios-financieros.png" alt="Servicios Financieros desde 1986" class="slide-img" />
-				<video width="100%" style="max-width: 980px" autoplay muted loop playsinline>
-					<source src="https://byc.nexbu.cloud/video/video_web_ByC.mp4" type="video/mp4" />
-				</video>
-			</div>
-
-			<div id="footer-container">
-				<div id="footer" class="col-full">
-					<div id="copyright">
-						<h6>B&amp;C Servicios Financieros S.A.</h6>
-						Magdalena 181, Oficina 1301, Las Condes, Santiago, CP 7550055, Chile<br />
-						Tel. + 562 2422 7700 - Fax + 562 2378-6319
-					</div>
-				</div>
-				<!-- /#footer  -->
-			</div>
-			<!-- /#footer-container -->
+			<h1>Sitio en Espera</h1>
+			<p>Nuestro sitio web está temporalmente en espera. Estaremos disponibles próximamente.</p>
+			<p style="margin-top: 20px; font-size: 0.9em; color: #999;">
+				B&amp;C Servicios Financieros S.A.<br />
+				Magdalena 181, Oficina 1301, Las Condes, Santiago, CP 7550055, Chile<br />
+				Tel. + 562 2422 7700 - Fax + 562 2378-6319
+			</p>
 		</div>
-		<!-- /#wrapper -->
-
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const toggle = document.querySelector('.menu-toggle')
-				const menu = document.querySelector('.nav ul')
-
-				toggle.addEventListener('click', function () {
-					menu.classList.toggle('show')
-				})
-			})
-		</script>
 	</body>
 </html>
